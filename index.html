@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de YouTube con fondo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #video-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        iframe {
+            width: 80vw;
+            height: 45vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-CODE
+    <div id="video-container">
+        <!-- Reemplaza 'VIDEO_ID' con el ID del video de YouTube que deseas reproducir -->
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" 
+            frameborder="0" 
+            allowfullscreen
+        ></iframe>
+    </div>
 </body>
 </html>
-
- 

@@ -1,1 +1,13 @@
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
 
+.gallery img {
+  width: 100%;
+  display: none;
+}
+
+.active {
+  display: block;
+}
